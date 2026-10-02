@@ -1,0 +1,15 @@
+services:
+  edgelog:
+    build: .
+    container_name: edgelog
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      MASSIVE_API_KEY: ${MASSIVE_API_KEY:-}
+      MARKET_DATA_PROVIDER: ${MARKET_DATA_PROVIDER:-}
+    volumes:
+      - edgelog-data:/data
+
+volumes:
+  edgelog-data:
