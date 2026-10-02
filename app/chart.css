@@ -1,0 +1,55 @@
+.timeframe-select {
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 10px 34px 10px 14px;
+  background: #0c1219;
+  color: #a8b4c0;
+}
+.panel-title h2.positive { color: var(--green); }
+.panel-title h2.negative { color: #ff6477; }
+.panel-title h2.positive span,
+.panel-title h2.negative span { color: #7a899a; }
+.chart-hint { color: #667587; font-size: 9px; padding-top: 5px; }
+.interactive-chart { cursor: crosshair; overflow: hidden; }
+.interactive-chart svg { overflow: hidden; }
+.interactive-chart .area { stroke: none; }
+.zero-line { stroke: #526172; stroke-width: 1; stroke-dasharray: 4 5; opacity: .7; }
+.curve-segment { stroke-width: 2.5; stroke-linecap: round; }
+.hover-guide { stroke: #93a4b5; stroke-width: 1; stroke-dasharray: 3 4; opacity: .65; }
+.hover-dot { stroke: #071017; stroke-width: 3; }
+.chart-tooltip {
+  position: absolute;
+  z-index: 4;
+  top: 7px;
+  transform: translateX(-50%);
+  min-width: 180px;
+  max-width: 230px;
+  padding: 10px 12px;
+  background: #0a1118f2;
+  border: 1px solid #334354;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px #000b;
+  pointer-events: none;
+  display: grid;
+  gap: 4px;
+}
+.chart-tooltip b { font-size: 11px; }
+.chart-tooltip small { color: #7e8d9c; font-size: 8px; }
+.chart-tooltip span { font-size: 10px; font-weight: 800; }
+.chart-tooltip em { font-style: normal; color: #8391a0; font-size: 8px; line-height: 1.35; }
+.chart-empty {
+  display: grid;
+  place-items: center;
+  height: 220px;
+  color: #667587;
+  border: 1px dashed #243240;
+  border-radius: 7px;
+  font-size: 11px;
+}
+.interactive-chart .axis { padding: 0 2px; }
+.interactive-chart .axis span { white-space: nowrap; }
+@media (max-width: 600px) {
+  .timeframe-select { max-width: 135px; }
+  .chart-tooltip { min-width: 155px; }
+}

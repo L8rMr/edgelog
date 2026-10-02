@@ -1,0 +1,138 @@
+.sample-note { display:block; color:#a1afbf; font-size:12px; margin:6px 0; font-weight:400; }
+.review-kicker { display:block; font-size:12px; letter-spacing:1.2px; color:#93e1be; font-weight:650; margin:0 0 8px; }
+.review-shortcut { display:flex; align-items:center; justify-content:space-between; gap:24px; background:linear-gradient(110deg,#18342c,#111b25); border:1px solid #31594c; border-radius:12px; padding:20px 24px; margin-bottom:20px; }
+.review-shortcut h2 { font-size:22px; letter-spacing:-.5px; margin:0; }
+.review-shortcut p,.review-intro { color:#b4c1cf; font-size:14px; margin:6px 0 0; }
+.review-shortcut button,.queue-toolbar input,.review-header button,.review-section button,.review-footer button,.queue-filters button { border:1px solid #354859; background:#182733; border-radius:7px; padding:10px 14px; min-height:42px; color:#eaf4fa; font-size:14px; }
+.review-shortcut button { white-space:nowrap; background:#244d3e; border-color:#427e64; }
+.review-shortcut button span { margin-left:14px; }
+.queue-toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; margin:24px 0 18px; }
+.queue-filters { display:flex; flex-wrap:wrap; gap:6px; }
+.queue-filters button { background:#111b25; }
+.queue-filters button[aria-pressed=true] { border-color:#54bd94; background:#1a3c30; color:#a4f4d0; }
+.queue-filters b { display:inline-block; margin-left:6px; padding:0 5px; border-radius:4px; background:#ffffff0d; font-variant-numeric:tabular-nums; }
+.queue-list { display:grid; gap:10px; }
+.queue-trade { display:grid; grid-template-columns:125px minmax(180px,1fr) 165px 95px 14px; align-items:center; gap:20px; width:100%; text-align:left; padding:20px; border:1px solid var(--line); border-radius:10px; background:var(--panel); }
+.queue-trade:hover { background:#182734; border-color:#4d7163; }
+.queue-trade strong { font-size:18px; font-variant-numeric:tabular-nums; }
+.queue-trade span,.queue-trade small { display:block; }
+.queue-symbol span,.queue-description span,.queue-badges small { font-size:12px; color:#a1afbf; margin-top:5px; }
+.queue-description b { font-size:14px; font-weight:500; }
+.queue-badges .evidence-chip { display:inline-block; margin:0 4px 4px 0; }
+.evidence-chip { display:inline-block; font-size:12px; font-weight:500; color:#c1d0df; background:#243140; border:1px solid #35475b; border-radius:5px; padding:3px 7px; white-space:nowrap; }
+.evidence-chip.manual { background:#193c31; color:#9ceac5; border-color:#386751; }
+.evidence-chip.caution { background:#3a2d1b; color:#f4ca82; border-color:#72562b; }
+.review-empty { text-align:center; padding:64px 20px; border:1px dashed #354859; border-radius:12px; color:#a1afbf; }
+.review-empty h2 { font-size:22px; color:#e0eaf4; }
+.trade-review-dialog { color:#edf4fb; background:#0e1620; border:1px solid #354859; border-radius:16px; padding:0; width:min(1220px,96vw); max-width:96vw; max-height:94dvh; height:94dvh; box-shadow:0 30px 100px #0009; margin:auto; overflow:hidden; }
+.trade-review-dialog[open] { display:flex; flex-direction:column; }
+.trade-review-dialog::backdrop { background:#020609c9; backdrop-filter:blur(5px); }
+.review-header { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 26px; border-bottom:1px solid #2a3948; flex-shrink:0; }
+.review-kicker span { color:#a1afbf; letter-spacing:0; font-weight:400; }
+.review-header h2 { font-size:28px; line-height:1.25; margin:0; letter-spacing:-.6px; }
+.review-header h2 span { font-size:14px; letter-spacing:0; color:#b4c2d0; font-weight:400; margin-left:10px; }
+.review-header-actions { display:flex; align-items:center; gap:12px; }
+.review-header .review-close { min-width:42px; font-size:26px; padding:0; background:transparent; }
+.review-scroll { overflow:auto; flex:1; min-height:0; padding:24px 26px; }
+.review-metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; padding:0 0 24px; border-bottom:1px solid #283747; }
+.review-metrics span { display:block; font-size:12px; color:#a1afbf; margin-bottom:8px; }
+.review-metrics strong { font-size:25px; letter-spacing:-.4px; font-variant-numeric:tabular-nums; line-height:1.2; display:block; }
+.review-metrics small { display:block; font-size:12px; color:#a1afbf; margin-top:6px; }
+.review-columns { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(320px,1fr); gap:24px; padding-top:24px; }
+.review-evidence,.review-writing { min-width:0; }
+.review-section { border:1px solid #283747; border-radius:10px; padding:20px; background:#121d29; margin-bottom:18px; }
+.review-section h3 { margin:0; font-size:17px; font-weight:600; }
+.review-section-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:12px; }
+.review-help { font-size:12px; line-height:1.6; color:#a8b7c7; margin:10px 0; }
+.review-section .chart-mode { display:flex; gap:4px; }
+.review-section .chart-mode button { min-height:34px; padding:6px 10px; font-size:12px; }
+.chart-mode button[aria-pressed=true] { color:#a5f0cd; border-color:#4f9c7b; background:#1c3c32; }
+.review-chart { padding:12px 0 8px; border-top:1px solid #2b3b4b; }
+.review-chart-title { display:flex; justify-content:space-between; align-items:center; gap:10px; margin:0 0 6px; }
+.review-chart-title h3 { font-size:15px; }
+.review-chart-title span { color:#a1afbf; font-size:12px; }
+.review-chart svg { width:100%; display:block; overflow:visible; touch-action:pan-y; }
+.review-chart svg text { font-family:inherit; font-size:13px; fill:#adbdcf; }
+.review-chart-grid { stroke:#293b4b; stroke-width:1; }
+.candle-up { stroke:#62dcac; fill:#62dcac; }
+.candle-down { stroke:#fa8997; fill:#fa8997; }
+.entry-marker line,.exit-marker line { stroke-width:1; stroke-dasharray:4 4; }
+.entry-marker line,.entry-marker circle { stroke:#8bc9ff; fill:#8bc9ff; }
+.exit-marker line,.exit-marker circle { stroke:#f1c987; fill:#f1c987; }
+.review-chart svg .entry-marker text { fill:#8bc9ff; }
+.review-chart svg .exit-marker text { fill:#f1c987; }
+.review-crosshair { stroke:#edf4fb; stroke-dasharray:2 4; }
+.candle-readout { min-height:38px; font-size:12px; color:#b7c6d4; font-variant-numeric:tabular-nums; }
+.candle-selector { width:100%; accent-color:#6cdbb0; height:22px; }
+.chart-missing { padding:28px 12px; font-size:14px; color:#a8b7c7; border:1px dashed #35495c; border-radius:8px; }
+.entry-evidence-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:18px 0; }
+.entry-evidence-summary span { font-size:12px; color:#a1afbf; }
+.entry-evidence-summary b { display:block; font-size:15px; color:#e1eaf3; margin-top:4px; }
+.evidence-checks details { border-top:1px solid #2b3b4b; }
+.evidence-checks summary { cursor:pointer; display:flex; align-items:center; gap:10px; padding:12px 0; font-size:13px; }
+.evidence-checks summary::before { content:'›'; color:#9daebe; }
+.evidence-checks details[open] summary::before { content:'⌄'; }
+.evidence-checks summary b { margin-left:auto; font-size:12px; font-weight:500; text-align:right; }
+.evidence-checks details p { font-size:13px; color:#afbfce; margin:0 0 14px; }
+.check-state { font-size:12px; padding:2px 5px; border-radius:4px; min-width:49px; text-align:center; flex-shrink:0; }
+.check-state.pass { color:#a2edca; background:#1d3d31; }
+.check-state.fail { color:#ffb0b8; background:#40252d; }
+.check-state.unverified { color:#e8ca91; background:#3b3121; }
+.review-preserved-notes { font-size:14px; white-space:pre-wrap; color:#d0deea; overflow-wrap:anywhere; }
+.review-writing fieldset { border:0; padding:0; margin:0; min-width:0; }
+.review-state-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin:16px 0; }
+.review-state-row label { display:flex; align-items:center; gap:8px; font-size:13px; color:#cedae7; }
+.review-state-row input { width:17px; height:17px; accent-color:#6cdbb0; }
+.review-field { display:block; font-size:14px; color:#d8e3ed; margin:18px 0 0; }
+.review-field input,.review-field select,.review-field textarea { display:block; width:100%; border:1px solid #3a4e60; border-radius:7px; background:#0d1721; color:#edf4fb; padding:11px 12px; margin-top:8px; font-size:14px; line-height:1.5; }
+.review-field textarea { resize:vertical; min-height:72px; }
+.review-field textarea::placeholder { color:#8fa2b5; }
+.review-field small { display:block; font-size:12px; line-height:1.55; color:#a1afbf; margin-top:6px; }
+.review-section .review-text-button { border:0; padding:0; background:transparent; color:#a2dfc2; min-height:30px; font-size:13px; }
+.review-screenshot { margin:16px 0 0; }
+.review-screenshot img { width:100%; max-height:300px; object-fit:contain; background:#0a1017; border:1px solid #334659; border-radius:7px; }
+.review-screenshot figcaption { display:flex; align-items:center; justify-content:space-between; gap:12px; font-size:12px; color:#a1afbf; }
+.review-screenshot figcaption span { overflow-wrap:anywhere; }
+.review-footer { flex-shrink:0; display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; padding:16px 26px; background:#14212d; border-top:1px solid #344757; }
+.review-footer>div:first-child { flex:1; font-size:13px; color:#b3c4d4; min-width:160px; }
+.review-footer>div:nth-child(2) { display:flex; flex-wrap:wrap; gap:10px; }
+.review-error { color:#ffb4be; font-size:14px; }
+.trade-review-dialog button:disabled { opacity:.45; cursor:not-allowed; }
+.table-wrap tr:focus-visible { outline:2px solid #6cdbb0; outline-offset:-3px; }
+@media(max-width:1100px) {
+    .queue-trade { grid-template-columns:100px minmax(150px,1fr) 130px 85px; gap:12px; }
+    .queue-trade>span:last-child { display:none; }
+}
+@media(max-width:800px) {
+    .review-columns { grid-template-columns:1fr; }
+    .review-header h2 span { display:block; margin:6px 0 0; }
+    .review-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .review-shortcut { align-items:flex-start; flex-direction:column; gap:14px; }
+    .queue-trade { grid-template-columns:1fr auto; }
+    .queue-description { grid-column:1; grid-row:2; }
+    .queue-badges { grid-column:1; grid-row:3; }
+    .queue-trade>strong { grid-column:2; grid-row:1; }
+}
+@media(max-width:600px) {
+    .sidebar nav { grid-template-columns:repeat(7,minmax(0,1fr)); }
+    .sidebar button span { font-size:11px; }
+    .trade-review-dialog { width:100vw; max-width:100vw; height:100dvh; max-height:100dvh; border-radius:0; border:0; }
+    .review-header { padding:16px; }
+    .review-header-actions { gap:6px; }
+    .review-header-actions button { font-size:12px; padding:6px 8px; }
+    .review-header h2 { font-size:24px; }
+    .review-header .review-kicker { font-size:11px; }
+    .review-kicker span { display:block; margin-top:4px; }
+    .review-scroll { padding:18px 12px; }
+    .review-section { padding:14px; }
+    .review-footer { padding:12px 16px max(12px,env(safe-area-inset-bottom)); }
+    .review-footer>div:first-child { flex-basis:100%; }
+    .review-footer>div:nth-child(2) { width:100%; }
+    .review-footer>div:nth-child(2) button { flex:1; font-size:13px; }
+    .review-shortcut { padding:18px; }
+    .queue-toolbar input { width:100%; }
+    .queue-filters button { font-size:13px; padding:8px 10px; }
+    .review-metrics strong { font-size:22px; }
+    .entry-evidence-summary { gap:8px; }
+    .evidence-checks summary { flex-wrap:wrap; }
+}
